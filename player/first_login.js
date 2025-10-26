@@ -76,7 +76,7 @@ function init(event) {
         */
 
         // Player Guild
-        playerData.put('guildName', 'null')
+        playerData.put('guildName', 'null') // --> Maybe this going to be deleted
 
         // Player Money
         playerData.put('diamond', 100)
@@ -92,7 +92,7 @@ function init(event) {
            longer run and all their stored data will be preserved! */
         playerData.put('firstJoin', 'true')
 
-
+        postFirstJoin(event)
     } else {
         return
     }
